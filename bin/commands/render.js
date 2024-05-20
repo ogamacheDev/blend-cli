@@ -34,7 +34,7 @@ function default_1(filePath, options) {
         var renderFormatArgs = renderConfig.format ? "-F ".concat(renderConfig.format) : '';
         var pythonConfigArgs = pythonArgs && renderConfig.pythonArgs ? "-- ".concat(renderConfig.pythonArgs.map(function (arg) { return "".concat(arg.name, "=\"").concat(arg.value, "\""); }).join(" ")) : '';
         // Command build
-        var args = [inputArgs, pythonArgs, outputArgs, sceneArgs, engineArgs, renderFormatArgs, renderArgs, pythonConfigArgs].filter(function (arg) { return arg != ''; });
+        var args = [inputArgs, pythonArgs, sceneArgs, outputArgs, engineArgs, renderFormatArgs, renderArgs, pythonConfigArgs].filter(function (arg) { return arg != ''; });
         var command = "blender ".concat(args.join(' '));
         console.log("Rendering: ".concat(renderConfig.fileName));
         if (options.debug)

@@ -6,7 +6,7 @@ var Command = require('commander').Command;
 var program = new Command();
 program
     .name('blend-cli')
-    .version('0.1')
+    .version('0.2')
     .argument('<config-file>', 'Specify the config file')
     .option('-e, --engine <engine>', 'specify a render engine')
     .option('-d, --debug', 'enable command logging')
