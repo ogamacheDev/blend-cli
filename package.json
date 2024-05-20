@@ -1,5 +1,5 @@
 {
-  "name": "blen-cli",
+  "name": "blend-cli",
   "version": "1.0.0",
   "description": "Constructs blender cli from a json file",
   "main": "index.js",
