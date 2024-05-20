@@ -1,0 +1,20 @@
+{
+  "name": "blen-cli",
+  "version": "1.0.0",
+  "description": "Constructs blender cli from a json file",
+  "main": "index.js",
+  "bin": {
+    "blend-cli": "./bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "shelljs": "^0.8.5",
+    "slugify": "^1.6.6",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0"
+  }
+}
